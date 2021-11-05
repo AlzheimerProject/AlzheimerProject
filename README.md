@@ -1,3 +1,3 @@
 # AlzheimerProjectRepo
 
-Admin : Mathis Rivière, Théodore Cadet
+Admin : Mathis Rivière, Théodore Cadet, Benjamin Carpentier
