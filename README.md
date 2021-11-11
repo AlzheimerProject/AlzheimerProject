@@ -1,3 +1,3 @@
 # AlzheimerProjectRepo
 
-Admin : Mathis Rivière, Théodore Cadet, Benjamin Carpentier, Adrien Gruel, Thomas Cardiet
+Admin : Mathis Rivière, Théodore Cadet, Benjamin Carpentier, Adrien Gruel, Thomas Cardiet  Thibault Sulem
