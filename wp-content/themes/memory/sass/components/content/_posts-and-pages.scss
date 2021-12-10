@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 5%;
-    height: 500vh;
+    height: 50vh;
     // background: no-repeat url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/vieux-homme-aine-soin-obtenir-alzheimer-soutien-image_csp84181718.jpg");
 
 
@@ -81,6 +81,7 @@ body {
 
                 border-radius: 40px;
 
+
                 .img-experience {
                     height: 45%;
                     background-color: red;
@@ -90,10 +91,15 @@ body {
                 .txt-experience {
                     height: 55%;
                     padding: 10px 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
 
                     h5,
                     p {
+						text-align: left;
+						width: 100%;
                         color: $lightPrimary;
                     }
 
@@ -104,17 +110,15 @@ body {
 
                         margin: 0;
                     }
-
-                    button {
-                        height: 35;
-                    }
+					
+					.see-more-btn {
+						padding: 10px 30px;
+						color: $textColor;
+						background-color: $lightPrimary;
+						border-radius: 10px;
+					}
                 }
 
-                .see-more-btn {
-                    padding: 10px 30px;
-                    color: $textColor;
-                    background-color: $lightPrimary;
-                }
             }
         }
     }

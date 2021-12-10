@@ -752,7 +752,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin-left: 5%;
-	height: 500vh;
+	height: 50vh;
 }
 
 #header-main div {
@@ -764,7 +764,7 @@ body {
 
 #header-main div h1,
 #header-main div p {
-	color: #F6F6F6;
+	color: #FFF;
 	text-align: center;
 }
 
@@ -795,7 +795,7 @@ body {
 
 #experiences-main ul li .one-experience {
 	height: 60vh;
-	background-color: #F6F6F6;
+	background-color: #FFF;
 	border-radius: 40px;
 }
 
@@ -808,10 +808,15 @@ body {
 #experiences-main ul li .one-experience .txt-experience {
 	height: 55%;
 	padding: 10px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #experiences-main ul li .one-experience .txt-experience h5,
 #experiences-main ul li .one-experience .txt-experience p {
+	text-align: left;
+	width: 100%;
 	color: #424CF9;
 }
 
@@ -821,14 +826,11 @@ body {
 	margin: 0;
 }
 
-#experiences-main ul li .one-experience .txt-experience button {
-	height: 35;
-}
-
-#experiences-main ul li .one-experience .see-more-btn {
+#experiences-main ul li .one-experience .txt-experience .see-more-btn {
 	padding: 10px 30px;
-	color: #F6F6F6;
+	color: #FFF;
 	background-color: #424CF9;
+	border-radius: 10px;
 }
 
 /* Comments

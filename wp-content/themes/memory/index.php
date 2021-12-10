@@ -19,13 +19,13 @@ get_header();
 <main id="primary" class="site-main">
 	<section id="header-main">
 		<div>
-			<h1>Give the elders a night</h1>
+			<h1>Give the elders a chance</h1>
 			<p>Welcome to Memory, we are here to fight for a world without Alzheimer's. </p>
 			<p>With your donations and experiences, we will be able to achieve this. </p>
 		</div>
 	</section>
 	<section id="experiences-main">
-		<h2>experiences</h2>
+		<h2>Experiences</h2>
 		<ul>
 			<li>
 				<section class="one-experience">
