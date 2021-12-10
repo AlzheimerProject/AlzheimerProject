@@ -30,7 +30,7 @@ get_header();
 			<li>
 				<section class="one-experience">
 					<article class="img-experience">
-						<img src="" alt="">
+						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/vieux-beau.jpeg" alt="">
 					</article>
 					<article class="txt-experience">
 						<h5>Christine, 64 years old.</h5>
@@ -47,7 +47,7 @@ get_header();
 			<li>
 				<section class="one-experience">
 					<article class="img-experience">
-						<img src="" alt="">
+						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/title-1576680650.jpg" alt="">
 					</article>
 					<article class="txt-experience">
 						<h5>Nicolas, 75 years old.</h5>
@@ -67,7 +67,7 @@ get_header();
 			<li>
 				<section class="one-experience">
 					<article class="img-experience">
-						<img src="" alt="">
+						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/three-great-reasons-why-older-is-better.jpg" alt="">
 					</article>
 					<article class="txt-experience">
 						<h5>John, 67 years old.</h5>

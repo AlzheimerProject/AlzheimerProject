@@ -751,13 +751,17 @@ body {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	margin-left: 5%;
-	height: 50vh;
+	justify-content: right;
+	height: 70vh;
+	background: url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/PL-1010-1800x897px.jpg");
+	transform: scaleX(-1);
+	background-size: cover;
 }
 
 #header-main div {
 	background-color: rgba(66, 76, 249, 0.7);
 	width: 50%;
+	transform: scaleX(-1);
 	border-radius: 40px;
 	padding: 40px 30px;
 }
@@ -794,15 +798,16 @@ body {
 }
 
 #experiences-main ul li .one-experience {
-	height: 60vh;
+	height: 75vh;
 	background-color: #FFF;
 	border-radius: 40px;
 }
 
 #experiences-main ul li .one-experience .img-experience {
+	background-size: cover;
 	height: 45%;
-	background-color: red;
 	border-radius: 40px 40px 0 0;
+	overflow: hidden;
 }
 
 #experiences-main ul li .one-experience .txt-experience {
