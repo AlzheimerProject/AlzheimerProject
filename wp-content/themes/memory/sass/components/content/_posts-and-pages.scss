@@ -1,23 +1,121 @@
 .sticky {
-	display: block;
+    display: block;
 }
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
-	display: none;
+    display: none;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+    margin: 1.5em 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+body {
+    background: $bodyBg;
+}
+
+#header-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    height: 500vh;
+    // background: no-repeat url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/vieux-homme-aine-soin-obtenir-alzheimer-soutien-image_csp84181718.jpg");
+
+
+
+    div {
+        background-color: $lightPrimaryLowOpacity;
+        width: 50%;
+        border-radius: 40px;
+        padding: 40px 30px;
+
+        h1,
+        p {
+            color: $textColor;
+            text-align: center;
+        }
+    }
+}
+
+#experiences-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        justify-content: space-around;
+        width: 100%;
+
+        li {
+            width: 25%;
+
+
+            .one-experience {
+                height: 60vh;
+
+                background-color: $textColor;
+
+                border-radius: 40px;
+
+                .img-experience {
+                    height: 45%;
+                    background-color: red;
+                    border-radius: 40px 40px 0 0;
+                }
+
+                .txt-experience {
+                    height: 55%;
+                    padding: 10px 25px;
+
+
+                    h5,
+                    p {
+                        color: $lightPrimary;
+                    }
+
+                    p {
+                        // height: 70%;
+                        height: 48%;
+                        overflow-y: hidden;
+
+                        margin: 0;
+                    }
+
+                    button {
+                        height: 35;
+                    }
+                }
+
+                .see-more-btn {
+                    padding: 10px 30px;
+                    color: $textColor;
+                    background-color: $lightPrimary;
+                }
+            }
+        }
+    }
 }

@@ -743,6 +743,94 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+body {
+	background: #DADADA;
+}
+
+#header-main {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 5%;
+	height: 500vh;
+}
+
+#header-main div {
+	background-color: rgba(66, 76, 249, 0.7);
+	width: 50%;
+	border-radius: 40px;
+	padding: 40px 30px;
+}
+
+#header-main div h1,
+#header-main div p {
+	color: #F6F6F6;
+	text-align: center;
+}
+
+#experiences-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#experiences-main h2 {
+	text-align: center;
+	width: 100%;
+}
+
+#experiences-main ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#experiences-main ul li {
+	width: 25%;
+}
+
+#experiences-main ul li .one-experience {
+	height: 60vh;
+	background-color: #F6F6F6;
+	border-radius: 40px;
+}
+
+#experiences-main ul li .one-experience .img-experience {
+	height: 45%;
+	background-color: red;
+	border-radius: 40px 40px 0 0;
+}
+
+#experiences-main ul li .one-experience .txt-experience {
+	height: 55%;
+	padding: 10px 25px;
+}
+
+#experiences-main ul li .one-experience .txt-experience h5,
+#experiences-main ul li .one-experience .txt-experience p {
+	color: #424CF9;
+}
+
+#experiences-main ul li .one-experience .txt-experience p {
+	height: 48%;
+	overflow-y: hidden;
+	margin: 0;
+}
+
+#experiences-main ul li .one-experience .txt-experience button {
+	height: 35;
+}
+
+#experiences-main ul li .one-experience .see-more-btn {
+	padding: 10px 30px;
+	color: #F6F6F6;
+	background-color: #424CF9;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
