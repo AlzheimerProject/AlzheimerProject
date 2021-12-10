@@ -27,10 +27,63 @@ get_header();
 	<section id="experiences-main">
 		<h2>Experiences</h2>
 		<ul>
-			<li>
+			<?php
+			while (have_posts()) :
+				the_post();
+
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				// get_template_part('template-parts/content', get_post_type());
+			?>
+				<li>
+					<section class="one-experience">
+						<article class="img-experience">
+							<?php
+							memory_post_thumbnail();
+							?>
+							<!-- <img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/title-1576680650.jpg" alt=""> -->
+						</article>
+						<article class="txt-experience">
+							<?php
+							the_title('<h5>', '</h5>');
+							the_content(
+								sprintf(
+									wp_kses(
+										/* translators: %s: Name of current post. Only visible to screen readers */
+										__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'memory' ),
+										array(
+											'span' => array(
+												'class' => array(),
+											),
+										)
+									),
+									wp_kses_post( get_the_title() )
+								)
+							);
+							?>
+							<!-- <h5>Christine, 64 years old.</h5> -->
+							<!-- <p>
+								Hello, my name is Christine and I discovered last month while going for exams
+								that a form of Alzheimer's developed in my brain ...
+							</p> -->
+							<form action="<?php echo esc_url(get_permalink()) ?>">
+								<button class="see-more-btn" type="submit">
+									See more
+								</button>
+							</form>
+						</article>
+					</section>
+				</li>
+			<?php
+
+			endwhile; ?>
+			<!-- <li>
 				<section class="one-experience">
 					<article class="img-experience">
-						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/vieux-beau.jpeg" alt="">
+						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/title-1576680650.jpg" alt="">
 					</article>
 					<article class="txt-experience">
 						<h5>Christine, 64 years old.</h5>
@@ -43,11 +96,11 @@ get_header();
 						</button>
 					</article>
 				</section>
-			</li>
-			<li>
+			</li> -->
+			<!-- <li>
 				<section class="one-experience">
 					<article class="img-experience">
-						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/title-1576680650.jpg" alt="">
+						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/three-great-reasons-why-older-is-better.jpg" alt="">
 					</article>
 					<article class="txt-experience">
 						<h5>Nicolas, 75 years old.</h5>
@@ -63,11 +116,11 @@ get_header();
 
 					</article>
 				</section>
-			</li>
-			<li>
+			</li> -->
+			<!-- <li>
 				<section class="one-experience">
 					<article class="img-experience">
-						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/three-great-reasons-why-older-is-better.jpg" alt="">
+						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/vieux-beau.jpeg" alt="">
 					</article>
 					<article class="txt-experience">
 						<h5>John, 67 years old.</h5>
@@ -81,45 +134,45 @@ get_header();
 						</button>
 					</article>
 				</section>
-			</li>
+			</li> -->
 		</ul>
 	</section>
 
-	<?php
-	if (have_posts()) :
+	<!-- <?php
+	// if (have_posts()) :
 
-		if (is_home() && !is_front_page()) :
+	// 	if (is_home() && !is_front_page()) :
 	?>
 			<header>
 				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header>
 	<?php
-		endif;
+	// 	endif;
 
-		/* Start the Loop */
-		while (have_posts()) :
-			the_post();
+	// 	/* Start the Loop */
+	// 	while (have_posts()) :
+	// 		the_post();
 
-			/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-			get_template_part('template-parts/content', get_post_type());
+	// 		/*
+	// 			 * Include the Post-Type-specific template for the content.
+	// 			 * If you want to override this in a child theme, then include a file
+	// 			 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+	// 			 */
+	// 		get_template_part('template-parts/content', get_post_type());
 
-		endwhile;
+	// 	endwhile;
 
-		the_posts_navigation();
+	// 	the_posts_navigation();
 
-	else :
+	// else :
 
-		get_template_part('template-parts/content', 'none');
+	// 	get_template_part('template-parts/content', 'none');
 
-	endif;
-	?>
+	// endif;
+	?> -->
 
 </main><!-- #main -->
 
 <?php
-get_sidebar();
-get_footer();
+// get_sidebar();
+// get_footer();

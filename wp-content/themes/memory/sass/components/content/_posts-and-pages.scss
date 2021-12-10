@@ -30,17 +30,17 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-	justify-content: right;
+    justify-content: right;
     height: 70vh;
     background: url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/PL-1010-1800x897px.jpg");
-	transform: scaleX(-1);
-	background-size: cover;
+    transform: scaleX(-1);
+    background-size: cover;
 
 
     div {
         background-color: $lightPrimaryLowOpacity;
         width: 50%;
-		transform: scaleX(-1);
+        transform: scaleX(-1);
         border-radius: 40px;
         padding: 40px 30px;
 
@@ -85,11 +85,11 @@ body {
 
 
                 .img-experience {
-					// background: url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/three-great-reasons-why-older-is-better.jpg");
-					background-size: cover;
+                    // background: url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/three-great-reasons-why-older-is-better.jpg");
+                    background-size: cover;
                     height: 45%;
                     border-radius: 40px 40px 0 0;
-					overflow: hidden;
+                    overflow: hidden;
                 }
 
                 .txt-experience {
@@ -102,8 +102,8 @@ body {
 
                     h5,
                     p {
-						text-align: left;
-						width: 100%;
+                        text-align: left;
+                        width: 100%;
                         color: $lightPrimary;
                     }
 
@@ -114,13 +114,13 @@ body {
 
                         margin: 0;
                     }
-					
-					.see-more-btn {
-						padding: 10px 30px;
-						color: $textColor;
-						background-color: $lightPrimary;
-						border-radius: 10px;
-					}
+
+                    .see-more-btn {
+                        padding: 10px 30px;
+                        color: $textColor;
+                        background-color: $lightPrimary;
+                        border-radius: 10px;
+                    }
                 }
 
             }
