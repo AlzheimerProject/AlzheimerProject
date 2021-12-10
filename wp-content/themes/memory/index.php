@@ -19,7 +19,7 @@ get_header();
 <main id="primary" class="site-main">
 	<section id="header-main">
 		<div>
-			<h1>Give the elders a chance</h1>
+			<h1>Give the elders a night</h1>
 			<p>Welcome to Memory, we are here to fight for a world without Alzheimer's. </p>
 			<p>With your donations and experiences, we will be able to achieve this. </p>
 		</div>
