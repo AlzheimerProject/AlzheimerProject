@@ -717,6 +717,27 @@ textarea {
 	flex: 1 0 50%;
 }
 
+footer.site-footer {
+	background-color: #2F38B0;
+	height: 20vh;
+	position: relative;
+}
+
+footer.site-footer .site-info {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #222B7F;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2vh 0;
+}
+
+footer.site-footer .site-info * {
+	color: white;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 #alz-description,
@@ -724,7 +745,16 @@ textarea {
 #alz-statistics {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding: 0 5%;
+}
+
+#alz-description h2,
+#alz-profil h2,
+#alz-statistics h2 {
+	width: 100%;
 }
 
 #alz-description img,
@@ -757,13 +787,29 @@ textarea {
 	width: 30%;
 }
 
-.sticky {
-	display: block;
+footer.site-footer {
+	background-color: #2F38B0;
+	height: 20vh;
+	position: relative;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
+footer.site-footer .site-info {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #222B7F;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2vh 0;
+}
+
+footer.site-footer .site-info * {
+	color: white;
+}
+
+.sticky {
+	display: block;
 }
 
 .updated:not(.published) {

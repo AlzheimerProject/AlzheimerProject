@@ -3,7 +3,13 @@
 #alz-statistics {
     width: 100%;   
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 5%;
+    h2{
+        width: 100%;
+    }
     img{
         border-radius: 40px;
     }

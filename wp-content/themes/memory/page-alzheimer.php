@@ -5,8 +5,8 @@ get_header();
 
 <main id="primary" class="site-main">
 	<!-- <section id="alz-description">
+		<h2>Description</h2>
 		<article class="left-part">
-			<h2>Description</h2>
 			<p>
 				Alzheimer's disease is a brain disorder that slowly destroys memory and thinking skills and, eventually,
 				the ability to carry out the simplest tasks. Alzheimer's is the most common cause of dementia, a general
@@ -26,8 +26,8 @@ get_header();
 		<article  class="right-part"><img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/brain.png" alt=""></article>
 	</section>
 	<section id="alz-profil">
+		<h2>Profil</h2>
 		<article class="left-part">
-			<h2>Profil</h2>
 			<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/old_woman.png" alt="">
 		</article>
 		<article  class="right-part">
@@ -51,8 +51,8 @@ get_header();
 		</article>
 	</section>
 	<section id="alz-statistics">
+		<h2>Statistics</h2>
 		<article class="left-part">
-			<h2>Statistics</h2>
 			<ul>
 				<li>
 					In France: Alzheimer's disease is the leading cause of dementia: 60 to 70% of cases.
@@ -69,10 +69,22 @@ get_header();
 		<article  class="right-part"><img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/stats.png" alt=""></article>
 	</section> -->
 
-	
+	<?php
+	while (have_posts()) :
+		the_post();
+
+		get_template_part('template-parts/content', 'page');
+
+		// If comments are open or we have at least one comment, load up the comment template.
+		// if (comments_open() || get_comments_number()) :
+		// 	comments_template();
+		// endif;
+
+	endwhile; // End of the loop.
+	?>
 
 </main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
