@@ -719,6 +719,44 @@ textarea {
 
 /* Posts and pages
 --------------------------------------------- */
+#alz-description,
+#alz-profil,
+#alz-statistics {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#alz-description img,
+#alz-profil img,
+#alz-statistics img {
+	border-radius: 40px;
+}
+
+#alz-description .left-part {
+	width: 60%;
+}
+
+#alz-description .right-part {
+	width: 20%;
+}
+
+#alz-profil .left-part {
+	width: 20%;
+}
+
+#alz-profil .right-part {
+	width: 60%;
+}
+
+#alz-statistics .left-part {
+	width: 50%;
+}
+
+#alz-statistics .right-part {
+	width: 30%;
+}
+
 .sticky {
 	display: block;
 }
