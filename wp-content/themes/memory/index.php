@@ -53,14 +53,14 @@ get_header();
 								sprintf(
 									wp_kses(
 										/* translators: %s: Name of current post. Only visible to screen readers */
-										__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'memory' ),
+										__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'memory'),
 										array(
 											'span' => array(
 												'class' => array(),
 											),
 										)
 									),
-									wp_kses_post( get_the_title() )
+									wp_kses_post(get_the_title())
 								)
 							);
 							?>
@@ -80,69 +80,27 @@ get_header();
 			<?php
 
 			endwhile; ?>
-			<!-- <li>
-				<section class="one-experience">
-					<article class="img-experience">
-						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/title-1576680650.jpg" alt="">
-					</article>
-					<article class="txt-experience">
-						<h5>Christine, 64 years old.</h5>
-						<p>
-							Hello, my name is Christine and I discovered last month while going for exams
-							that a form of Alzheimer's developed in my brain ...
-						</p>
-						<button class="see-more-btn" type="submit">
-							See more
-						</button>
-					</article>
-				</section>
-			</li> -->
-			<!-- <li>
-				<section class="one-experience">
-					<article class="img-experience">
-						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/three-great-reasons-why-older-is-better.jpg" alt="">
-					</article>
-					<article class="txt-experience">
-						<h5>Nicolas, 75 years old.</h5>
-						<p>
-							Hi, it's Nicolas! First post I made on this site that I discovered
-							thanks to the posts on facebook. I was diagnosed 5 years ago and I will
-							tell you how I gradually regained my memory.
-						</p>
-						<button class="see-more-btn" type="submit">
-							See more
-						</button>
-
-
-					</article>
-				</section>
-			</li> -->
-			<!-- <li>
-				<section class="one-experience">
-					<article class="img-experience">
-						<img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/vieux-beau.jpeg" alt="">
-					</article>
-					<article class="txt-experience">
-						<h5>John, 67 years old.</h5>
-						<p>
-							My name is John and I have just had terrible news, my condition
-							is getting worse and I have just passed into an advanced stage
-							of the disease.
-						</p>
-						<button class="see-more-btn" type="submit">
-							See more
-						</button>
-					</article>
-				</section>
-			</li> -->
 		</ul>
+	</section>
+	<section id="donation-main">
+		<article class="donation-txt">
+			<h2>Donation</h2>
+			<p>Many families and old people need you.</p>
+			<p>
+				So don't wait any longer, donate now to help our researchers make progress against the disease.
+				So don't wait any longer, donate now to help our researchers make progress against the disease.
+			</p>
+			<button>Donate</button>
+		</article>
+		<article><img src="http://localhost/AlzheimerProject/wp-content/uploads/2021/12/old_n_young.png" alt=""></article>
+
 	</section>
 
 	<!-- <?php
-	// if (have_posts()) :
+			// if (have_posts()) :
 
-	// 	if (is_home() && !is_front_page()) :
-	?>
+			// 	if (is_home() && !is_front_page()) :
+			?>
 			<header>
 				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header>

@@ -10,6 +10,29 @@
     // margin: 0 0 1.5em;
 }
 
+#donation-main {
+    height: 55vh;
+    background-color: $lightPrimary;
+    display: flex;
+
+    article {
+        width: 50%;
+    }
+
+    .donation-txt {
+        padding: 60px 80px;
+        text-align: center;
+        color: $textColor;
+
+        button {
+            padding: 10px 30px;
+            color: $textColor;
+            background-color: $lightSecondary;
+            border-radius: 10px;
+        }
+    }
+}
+
 .updated:not(.published) {
     display: none;
 }
@@ -27,6 +50,10 @@
 
 body {
     background: $bodyBg;
+}
+
+section{
+    margin-bottom: 30px;
 }
 
 #header-main {

@@ -812,6 +812,29 @@ footer.site-footer .site-info * {
 	display: block;
 }
 
+#donation-main {
+	height: 55vh;
+	background-color: #424CF9;
+	display: flex;
+}
+
+#donation-main article {
+	width: 50%;
+}
+
+#donation-main .donation-txt {
+	padding: 60px 80px;
+	text-align: center;
+	color: #FFF;
+}
+
+#donation-main .donation-txt button {
+	padding: 10px 30px;
+	color: #FFF;
+	background-color: #5AF8BD;
+	border-radius: 10px;
+}
+
 .updated:not(.published) {
 	display: none;
 }
@@ -829,6 +852,10 @@ footer.site-footer .site-info * {
 
 body {
 	background: #DADADA;
+}
+
+section {
+	margin-bottom: 30px;
 }
 
 #header-main {
