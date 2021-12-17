@@ -717,27 +717,6 @@ textarea {
 	flex: 1 0 50%;
 }
 
-footer.site-footer {
-	background-color: #2F38B0;
-	height: 20vh;
-	position: relative;
-}
-
-footer.site-footer .site-info {
-	color: white;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: #222B7F;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 2vh 0;
-}
-
-footer.site-footer .site-info * {
-	color: white;
-}
-
 /* Posts and pages
 --------------------------------------------- */
 #alz-description,
@@ -785,27 +764,6 @@ footer.site-footer .site-info * {
 
 #alz-statistics .right-part {
 	width: 30%;
-}
-
-footer.site-footer {
-	background-color: #2F38B0;
-	height: 20vh;
-	position: relative;
-}
-
-footer.site-footer .site-info {
-	color: white;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: #222B7F;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 2vh 0;
-}
-
-footer.site-footer .site-info * {
-	color: white;
 }
 
 .sticky {
@@ -1191,6 +1149,56 @@ section {
 }
 
 .nav-desktop ul li:last-child a:hover {
+	color: azure;
+}
+
+.site-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 5%;
+	background-color: #2F38B0;
+	height: 90px;
+	box-shadow: 0px 5px 5px 0px #b4b4b4;
+}
+
+.site-footer .logo {
+	line-height: 0;
+	justify-self: start;
+}
+
+.site-footer .logo img {
+	width: auto;
+	height: 85px;
+}
+
+.footer-desktop ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.footer-desktop ul li {
+	padding: 10px 18px;
+}
+
+.footer-desktop ul li a {
+	padding: 5px 15px;
+	color: #5AF8BD;
+}
+
+.footer-desktop ul li a:hover {
+	color: azure;
+}
+
+.footer-desktop ul li:last-child a {
+	padding: 15px 15px;
+	color: #222B7F;
+	background-color: #5AF8BD;
+	border-radius: 15px;
+}
+
+.footer-desktop ul li:last-child a:hover {
 	color: azure;
 }
 
