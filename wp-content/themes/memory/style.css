@@ -723,9 +723,27 @@ textarea {
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
+#donation-main {
+	height: 55vh;
+	background-color: #424CF9;
+	display: flex;
+}
+
+#donation-main article {
+	width: 50%;
+}
+
+#donation-main .donation-txt {
+	padding: 60px 80px;
+	text-align: center;
+	color: #FFF;
+}
+
+#donation-main .donation-txt button {
+	padding: 10px 30px;
+	color: #FFF;
+	background-color: #5AF8BD;
+	border-radius: 10px;
 }
 
 .updated:not(.published) {
@@ -747,24 +765,32 @@ body {
 	background: #DADADA;
 }
 
+section {
+	margin-bottom: 30px;
+}
+
 #header-main {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	margin-left: 5%;
-	height: 500vh;
+	justify-content: right;
+	height: 70vh;
+	background: url("http://localhost/AlzheimerProject/wp-content/uploads/2021/12/PL-1010-1800x897px.jpg");
+	transform: scaleX(-1);
+	background-size: cover;
 }
 
 #header-main div {
 	background-color: rgba(66, 76, 249, 0.7);
 	width: 50%;
+	transform: scaleX(-1);
 	border-radius: 40px;
 	padding: 40px 30px;
 }
 
 #header-main div h1,
 #header-main div p {
-	color: #F6F6F6;
+	color: #FFF;
 	text-align: center;
 }
 
@@ -794,24 +820,30 @@ body {
 }
 
 #experiences-main ul li .one-experience {
-	height: 60vh;
-	background-color: #F6F6F6;
+	height: 75vh;
+	background-color: #FFF;
 	border-radius: 40px;
 }
 
 #experiences-main ul li .one-experience .img-experience {
+	background-size: cover;
 	height: 45%;
-	background-color: red;
 	border-radius: 40px 40px 0 0;
+	overflow: hidden;
 }
 
 #experiences-main ul li .one-experience .txt-experience {
 	height: 55%;
 	padding: 10px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #experiences-main ul li .one-experience .txt-experience h5,
 #experiences-main ul li .one-experience .txt-experience p {
+	text-align: left;
+	width: 100%;
 	color: #424CF9;
 }
 
@@ -821,14 +853,11 @@ body {
 	margin: 0;
 }
 
-#experiences-main ul li .one-experience .txt-experience button {
-	height: 35;
-}
-
-#experiences-main ul li .one-experience .see-more-btn {
+#experiences-main ul li .one-experience .txt-experience .see-more-btn {
 	padding: 10px 30px;
-	color: #F6F6F6;
+	color: #FFF;
 	background-color: #424CF9;
+	border-radius: 10px;
 }
 
 /* Comments
@@ -1022,6 +1051,108 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 5%;
+	background-color: #2F38B0;
+	height: 90px;
+	box-shadow: 0px 5px 5px 0px #b4b4b4;
+}
+
+.header .logo {
+	line-height: 0;
+	justify-self: start;
+}
+
+.header .logo img {
+	width: auto;
+	height: 85px;
+}
+
+.nav-desktop ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nav-desktop ul li {
+	padding: 10px 18px;
+}
+
+.nav-desktop ul li a {
+	padding: 5px 15px;
+	color: #222B7F;
+	background-color: azure;
+	border-radius: 15px;
+}
+
+.nav-desktop ul li a:hover {
+	color: #5AF8BD;
+}
+
+.nav-desktop ul li:last-child a {
+	padding: 15px 15px;
+	color: #222B7F;
+	background-color: #5AF8BD;
+	border-radius: 15px;
+}
+
+.nav-desktop ul li:last-child a:hover {
+	color: azure;
+}
+
+.site-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 5%;
+	background-color: #2F38B0;
+	height: 90px;
+	box-shadow: 0px 5px 5px 0px #b4b4b4;
+}
+
+.site-footer .logo {
+	line-height: 0;
+	justify-self: start;
+}
+
+.site-footer .logo img {
+	width: auto;
+	height: 85px;
+}
+
+.footer-desktop ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.footer-desktop ul li {
+	padding: 10px 18px;
+}
+
+.footer-desktop ul li a {
+	padding: 5px 15px;
+	color: #5AF8BD;
+}
+
+.footer-desktop ul li a:hover {
+	color: azure;
+}
+
+.footer-desktop ul li:last-child a {
+	padding: 15px 15px;
+	color: #222B7F;
+	background-color: #5AF8BD;
+	border-radius: 15px;
+}
+
+.footer-desktop ul li:last-child a:hover {
+	color: azure;
 }
 
 /* Pages

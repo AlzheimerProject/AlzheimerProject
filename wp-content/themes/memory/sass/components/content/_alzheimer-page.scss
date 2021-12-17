@@ -1,0 +1,47 @@
+#alz-description,
+#alz-profil,
+#alz-statistics {
+    width: 100%;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 5%;
+    h2{
+        width: 100%;
+    }
+    img{
+        border-radius: 40px;
+    }
+
+}
+
+#alz-description{
+    .left-part{
+        width: 60%;
+
+    }
+    .right-part{
+        width: 20%;
+    }
+}
+
+#alz-profil{
+    .left-part{
+        width: 20%;
+        
+    }
+    .right-part{
+        width: 60%;
+    }
+}
+
+#alz-statistics{
+    .left-part{
+        width: 50%;
+
+    }
+    .right-part{
+        width: 30%;
+    }
+}
