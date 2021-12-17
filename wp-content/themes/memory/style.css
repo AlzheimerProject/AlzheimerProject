@@ -1168,13 +1168,6 @@ section {
 	justify-content: flex-end;
 }
 
-.nav-desktop ul li:last-child a {
-	padding: 15px 15px;
-	color: #222B7F;
-	background-color: #5AF8BD;
-	border-radius: 15px;
-}
-
 .nav-desktop ul li {
 	padding: 10px 18px;
 }
@@ -1188,6 +1181,17 @@ section {
 
 .nav-desktop ul li a:hover {
 	color: #5AF8BD;
+}
+
+.nav-desktop ul li:last-child a {
+	padding: 15px 15px;
+	color: #222B7F;
+	background-color: #5AF8BD;
+	border-radius: 15px;
+}
+
+.nav-desktop ul li:last-child a:hover {
+	color: azure;
 }
 
 /*# sourceMappingURL=style.css.map */
